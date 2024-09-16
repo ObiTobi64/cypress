@@ -8,7 +8,6 @@ describe('Simulación de búsqueda de vuelos en Skyscanner', () => {
         cy.get('input[placeholder="Where from?"]').type('New York');
 
         cy.get('.BpkAutosuggest_bpk-autosuggest__suggestion').first().click();
-
         cy.get('[aria-label="Destination airport"]').click({ force: true });
         cy.get('input[placeholder="Where to?"]').type('London');
 
